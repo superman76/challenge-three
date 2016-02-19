@@ -24,7 +24,21 @@ router.route('/products')
 
     var product = new Product();
 
+    product.name = req.body.name
+    product.inStock = req.body.inStock
+    product.cost = req.body.cost
+
     //Finish the post route to properly create a new product..
+
+  // name: String,
+  // inStock: Boolean,
+  // cost: String
+  // bear.name = req.body.name;
+  // bear.age = req.body.age;
+  // bear.gender = req.body.gender;
+// ### 1) Finish the `POST` route for /api/products. 
+// Use POSTMAN to create some products. Hint: Find the error 
+// in `models/product`
 
     product.save(function(err, product){
       if(err){
@@ -36,4 +50,4 @@ router.route('/products')
   });
 
 
-module.exports = something;
+module.exports = router;
