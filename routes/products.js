@@ -28,6 +28,8 @@ router.route('/products')
     product.inStock = req.body.inStock;
     product.cost = req.body.cost;
 
+    
+
     //Finish the post route to properly create a new product..
 
   // name: String,
