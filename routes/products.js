@@ -24,9 +24,9 @@ router.route('/products')
 
     var product = new Product();
 
-    product.name = req.body.name
-    product.inStock = req.body.inStock
-    product.cost = req.body.cost
+    product.name = req.body.name;
+    product.inStock = req.body.inStock;
+    product.cost = req.body.cost;
 
     //Finish the post route to properly create a new product..
 
